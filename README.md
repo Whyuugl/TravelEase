@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# TravelEase - Platform Pariwisata Indonesia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TravelEase adalah platform pariwisata modern yang dirancang untuk membantu wisatawan menemukan dan merencanakan perjalanan mereka di Indonesia dengan mudah dan menyenangkan.
 
-Currently, two official plugins are available:
+## 🌟 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Destinasi Unggulan**: Jelajahi destinasi wisata populer di Indonesia
+- **Kategori Wisata**: Temukan berbagai jenis wisata sesuai minat Anda
+- **Testimoni**: Baca pengalaman dari wisatawan lain
+- **Kontak Langsung**: Hubungi tim kami untuk bantuan perencanaan perjalanan
+- **Antarmuka Modern**: Desain responsif dan user-friendly
 
-## Expanding the ESLint configuration
+## 🛠️ Teknologi yang Digunakan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React + TypeScript
+- Vite
+- Emotion (Styled Components)
+- React Icons
+- React Intersection Observer
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Memulai
+
+### Prasyarat
+
+- Node.js (versi 14.0.0 atau lebih baru)
+- npm atau yarn
+
+### Instalasi
+
+1. Clone repository
+```bash
+git clone https://github.com/Whyuugl/TravelEase.git
+cd TravelEase
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies
+```bash
+npm install
+# atau
+yarn install
 ```
+
+3. Jalankan development server
+```bash
+npm run dev
+# atau
+yarn dev
+```
+
+4. Buka browser dan akses `http://localhost:5173`
+
+## 📁 Struktur Proyek
+
+```
+TravelEase/
+├── src/
+│   ├── components/     # Komponen React
+│   ├── styles/        # Styling dan tema
+│   ├── assets/        # Gambar dan aset statis
+│   └── types/         # TypeScript type definitions
+├── public/            # File statis
+└── ...
+```
+
+## 🎨 Komponen Utama
+
+- **HeroSection**: Tampilan utama dengan call-to-action
+- **FeaturedDestinations**: Destinasi wisata unggulan
+- **CategoriesSection**: Kategori wisata yang tersedia
+- **Testimonials**: Ulasan dari wisatawan
+- **ContactUs**: Formulir kontak
+- **Navbar**: Navigasi utama
+- **Footer**: Informasi tambahan dan link
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima! Jika Anda ingin berkontribusi:
+
+1. Fork repository
+2. Buat branch baru (`git checkout -b fitur-baru`)
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`)
+4. Push ke branch (`git push origin fitur-baru`)
+5. Buat Pull Request
+
+## 📞 Kontak
+
+Untuk pertanyaan atau dukungan, silakan hubungi:
+- Email: [wahyugalang777.com]
+- GitHub: [@Whyuugl](https://github.com/Whyuugl)
+
+---
+
+Dibuat dengan ❤️ untuk memajukan pariwisata Indonesia
